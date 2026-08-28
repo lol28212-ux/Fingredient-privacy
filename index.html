@@ -54,7 +54,7 @@
 <body>
 <main>
   <h1>Privacy Policy for Fingredient</h1>
-  <p class="updated">Last updated: August 6, 2026</p>
+  <p class="updated">Last updated: August 28, 2026</p>
 
   <div class="lede">
     <p>Fingredient has no accounts, no logins, and no analytics. Your allergen and
@@ -75,23 +75,37 @@
   app and are not uploaded.</p>
 
   <h2>Camera and photos</h2>
-  <p>Fingredient requests camera access so you can scan a barcode or an
-  ingredients label, and photo library access so you can choose a label photo you
-  already took.</p>
+  <p>Fingredient requests camera access so you can scan a barcode, an
+  ingredients label, or a product's packaging, and photo library access so you
+  can choose a label photo you already took.</p>
   <p>Text recognition runs entirely on your device using Apple's built-in Vision
-  framework. <strong>Photos and the text extracted from them are never uploaded,
-  stored on a server, or shared with anyone.</strong> They are discarded when you
-  leave the scan.</p>
+  framework. <strong>Photos themselves are never uploaded, stored on a server, or
+  shared with anyone</strong> — they are discarded as soon as the text on them is
+  read.</p>
+  <p>When you scan an ingredients label, that text stays on your device. When you
+  scan a brand — or follow a brand suggestion while using Live Scan — the product
+  name your phone read off the packaging (not the photo) is sent to Open Food
+  Facts to search for a matching product, as described below.</p>
 
   <h2>Information sent off your device</h2>
-  <p>When you scan a barcode, Fingredient sends <strong>only that barcode
-  number</strong> to <a href="https://world.openfoodfacts.org">Open Food Facts</a>,
-  a free and open food product database, in order to look up the product's
-  ingredients. No information about you, your device, or your watch list is
-  included in that request.</p>
+  <p>Fingredient sends network requests to
+  <a href="https://world.openfoodfacts.org">Open Food Facts</a>, a free and open
+  food product database, to look up a product's ingredients:</p>
+  <ul>
+    <li><strong>Scanning a barcode</strong> sends only that barcode number.</li>
+    <li><strong>Scanning a brand</strong>, or following a brand suggestion from
+    Live Scan, sends the product name text your phone read off the packaging, so
+    Open Food Facts can search for a match. You then pick the correct product
+    from a list before any ingredients are looked up.</li>
+    <li><strong>Picking a product</strong> from that list sends its barcode
+    number, the same as scanning a barcode directly.</li>
+  </ul>
+  <p>None of these requests include your name, your watch list, or any other
+  information about you or your device — only the barcode number or packaging
+  text needed to find the product.</p>
   <p>Open Food Facts is an independent third party and handles requests under its
   own <a href="https://world.openfoodfacts.org/privacy">privacy policy</a>.</p>
-  <p>This is the only network request the app makes.</p>
+  <p>These are the only network requests the app makes.</p>
 
   <h2>What Fingredient does not do</h2>
   <ul>
